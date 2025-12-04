@@ -1,29 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 body {
   margin: 0;
-  padding: 0;
+  padding: 2rem 5rem;
+  font-family: "Inter", sans-serif;
   color: white;
   background-color: black;
-}
-
-.comeco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url("./img/Background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .secao {
   display: flex;
 }
 
+.comeco {
+  width: 100%;
+}
+
 .secao-texto {
   display: flex;
   flex-direction: column;
+  width: 35vw;
+}
+
+.secao-imagem {
   width: 30vw;
 }
 
-.cabecalho-links {
+.dispositivos {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+
+.dispositivos-lista {
+  display: flex;
+  justify-content: center;
+}
+
+.dispositivos-item {
+  width: 25vw;
+}
+
+.dispositivos-imagem {
+  width: 25vw;
+  align-self: center;
+}
+
+.dispositivos-legenda {
+  text-align: center;
 }
 
 footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  display: block;
+}
+
+.footer-texto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
