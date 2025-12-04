@@ -5,6 +5,25 @@ body {
   background-color: black;
 }
 
-#combo-plus {
-  background-image: "./img/Backgroung.png";
+.comeco {
+  background-image: url("./img/Background.png");
+}
+
+.secao {
+  display: flex;
+}
+
+.secao-texto {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.cabecalho-links {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
 }
