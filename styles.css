@@ -1,31 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-body {
+:root {
+  --padding-body-cima-baixo: 2rem;
+  --padding-body-esq-dir: 5rem;
+  --margin-padding-secao-cima-baixo: 2rem;
+  --margin-padding-secao-esq-dir: 8rem;
+  --largura-componentes: calc(100vw - var(--padding-body-esq-dir) * 2 - var(--margin-padding-secao-esq-dir) * 2);
+  --max-largura-componentes: 1300px;
+}
+
+* {
   margin: 0;
-  padding: 2rem 5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: var(--padding-body-cima-baixo) var(--padding-body-esq-dir);
   font-family: "Inter", sans-serif;
   color: white;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./img/Background.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+}
+
+.componente {
+  width: var(--largura-componentes);
+  max-width: var(--max-largura-componentes);
 }
 
 .secao {
-  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem;
+  margin: 0 var(--margin-padding-secao-esq-dir);
+  padding: var(--margin-padding-secao-cima-baixo) 0;
   gap: 5rem;
   background-color: violet;
 }
 
-.comeco {
+.secao-comeco {
   width: 100%;
+  background-image: url("./img/Background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .grupo-botoes-assinar {
@@ -33,7 +53,7 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 0 1rem;
   gap: 1rem;
 }
 
@@ -41,6 +61,7 @@ body {
   padding: 1rem;
   border-radius: 0.5rem;
   color: white;
+  text-decoration: none;
 }
 
 .botao-assinar-combo {
@@ -58,11 +79,15 @@ body {
 .secao-texto {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
   width: 35vw;
+  max-width: 600px;
 }
 
 .secao-imagem {
   width: 30vw;
+  max-width: 700px;
 }
 
 .botao-menor-assinar-combo {
@@ -70,26 +95,25 @@ body {
 }
 
 .dispositivos {
-  padding: 0 4rem;
-  width: auto;
+  margin: var(--margin-padding-secao-cima-baixo) var(--margin-padding-secao-esq-dir);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70vw;
   background-color: lightcoral;
 }
 
 .dispositivos-lista {
   display: flex;
   justify-content: center;
+  list-style-type: none;
 }
 
 .dispositivos-item {
-  width: 25vw;
+  width: 20vw;
 }
 
 .dispositivos-imagem {
-  width: 25vw;
+  width: 20vw;
   align-self: center;
 }
 
@@ -98,24 +122,24 @@ body {
 }
 
 footer {
-  width: auto;
   background-color: darkgray;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
-  padding-bottom: 0;
+  margin: 0 var(--margin-padding-secao-esq-dir);
   gap: 1rem;
   justify-content: space-between;
 }
 
 .footer-links {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  display: inline-block;
+  text-align: center;
+
   a {
+    margin: 0.25rem;
     text-decoration: none;
     color: white;
+    font-size: 0.9rem;
   }
 }
 

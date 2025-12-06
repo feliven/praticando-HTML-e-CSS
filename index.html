@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="secao comeco">
+    <section class="componente secao secao-comeco">
       <div class="secao-texto">
         <h1>Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
         <img src="./img/Combo.png" alt="" />
         <div class="grupo-botoes-assinar">
-          <button class="botao-assinar botao-assinar-combo">Assine por 12x de R$ 120,00*</button>
-          <button class="botao-assinar botao-assinar-alura-plus">Assinar somente o Alura+</button>
+          <!-- Quando queremos chamar uma função no clique, usamos um botão. Porém, quando a intenção é direcionar para outra página do mesmo site ou para outra seção, preferimos usar uma âncora, por questões de SEO. No CSS, a âncora pode ser estilizada para se parecer com um botão. -->
+
+          <a href="#" class="botao-assinar botao-assinar-combo">Assine por 12x de R$ 120,00*</a>
+          <a href="#" class="botao-assinar botao-assinar-alura-plus">Assinar somente o Alura+</a>
           <small>*O preço pode variar caso a assinatura seja feita em outros planos.</small>
         </div>
       </div>
     </section>
-    <section class="secao">
+    <section class="componente secao">
       <img src="./img/Plataformas.png" alt="" class="secao-imagem" />
       <div class="secao-texto">
-        <h1>Assista do seu jeito</h1>
+        <h2>Assista do seu jeito</h2>
         <p>
           Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de
           cursos não para de crescer.
         </p>
       </div>
     </section>
-    <section class="secao">
+    <section class="componente secao">
       <div class="secao-texto">
         <p>
           Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da tecnologia
@@ -38,33 +40,33 @@
       </div>
       <img src="./img/Telas.png" alt="" class="secao-imagem" />
     </section>
-    <section class="secao">
+    <section class="componente secao">
       <img src="./img/Notebook.png" alt="" class="secao-imagem" />
       <div class="secao-texto">
-        <h1>Baixe seus cursos</h1>
+        <h2>Baixe seus cursos</h2>
         <p>
           Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
         </p>
       </div>
     </section>
-    <section class="dispositivos">
-      <h1>Disponível nos seus dispositivos favoritos</h1>
-      <div class="dispositivos-lista">
-        <div class="dispositivos-item">
+    <section class="componente dispositivos">
+      <h2>Disponível nos seus dispositivos favoritos</h2>
+      <ul class="dispositivos-lista">
+        <li class="dispositivos-item">
           <img src="./img/tv.png" alt="" class="dispositivos-imagem" />
           <h3 class="dispositivos-legenda">TV</h3>
-        </div>
-        <div class="dispositivos-item">
+        </li>
+        <li class="dispositivos-item">
           <img src="./img/computador.png" alt="" class="dispositivos-imagem" />
           <h3 class="dispositivos-legenda">Computadores</h3>
-        </div>
-        <div class="dispositivos-item">
+        </li>
+        <li class="dispositivos-item">
           <img src="./img/celular.png" alt="" class="dispositivos-imagem" />
           <h3 class="dispositivos-legenda">Celulares e tablets</h3>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
-    <footer>
+    <footer class="componente">
       <div><img src="./img/Logo.png" alt="" /></div>
       <div class="footer-links">
         <a href="#">Idioma</a>
