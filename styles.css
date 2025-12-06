@@ -75,6 +75,14 @@ small {
 .botao-assinar-combo {
   border: none;
   background-color: mediumblue;
+
+  &:hover {
+    color: black;
+    background-color: cyan;
+  }
+  &:active {
+    color: purple;
+  }
 }
 
 .botao-assinar-alura-plus {
@@ -82,6 +90,10 @@ small {
   border-color: white;
   border-style: solid;
   background-color: transparent;
+  &:hover {
+    color: black;
+    background-color: lightcyan;
+  }
 }
 
 .secao-texto {
@@ -156,6 +168,12 @@ footer {
     text-decoration: none;
     color: white;
     font-size: 0.9rem;
+    &:hover {
+      background-color: grey;
+    }
+    &:active {
+      color: purple;
+    }
   }
 }
 
