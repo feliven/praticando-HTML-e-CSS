@@ -15,11 +15,44 @@ body {
 }
 
 .secao {
+  width: auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  gap: 5rem;
+  background-color: violet;
 }
 
 .comeco {
   width: 100%;
+}
+
+.grupo-botoes-assinar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.botao-assinar {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.botao-assinar-combo {
+  border: none;
+  background-color: mediumblue;
+}
+
+.botao-assinar-alura-plus {
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  background-color: transparent;
 }
 
 .secao-texto {
@@ -32,11 +65,18 @@ body {
   width: 30vw;
 }
 
+.botao-menor-assinar-combo {
+  width: 30%;
+}
+
 .dispositivos {
+  padding: 0 4rem;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 70vw;
+  background-color: lightcoral;
 }
 
 .dispositivos-lista {
@@ -58,17 +98,31 @@ body {
 }
 
 footer {
+  width: auto;
+  background-color: darkgray;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3rem;
+  padding-bottom: 0;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
 .footer-links {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .footer-texto {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
